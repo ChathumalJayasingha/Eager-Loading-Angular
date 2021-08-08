@@ -1,0 +1,17 @@
+<p>customer works!</p>
+<div class="btn-group">
+  <button (click)="loadCustomerPage('save-customer')">save-customer</button>
+  <button (click)="loadCustomerPage('delete-customer')"> delete-customer</button>
+  <button (click)="loadCustomerPage('update-customer')">update-customer</button>
+  <button (click)="loadCustomerPage('search-customer')">search-customer</button>
+
+
+</div>
+
+<hr>
+<br>
+<input type="text" [(ngModel)]="selectedId">
+<br><br>
+<hr>
+
+<router-outlet></router-outlet>
